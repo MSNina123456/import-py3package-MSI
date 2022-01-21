@@ -30,7 +30,7 @@ PYPI_ENDPOINT = "https://pypi.org/simple"
 FILENAME_PATTERN = "[\\w]+"
 #endregion
 
-def get_automation_runas_token():
+def get_automation_msi_token():
     """ Returns a token that can be used to authenticate against Azure resources """
     import json
 
@@ -111,7 +111,7 @@ if __name__ == '__main__':
             module_name = i
 
     # Set Run as token for this automation accounts service principal to be used to import the package into Automation account
-    token = get_automation_runas_token()
+    token = get_automation_msi_token()
 
     # Import package with dependencies from pypi.org
     import_package_with_dependencies(module_name)
