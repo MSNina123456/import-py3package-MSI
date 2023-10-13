@@ -10,7 +10,7 @@ Args:
     module_name (-m) - Name of module to import from pypi.org
     Imports module
     Example:
-        import_python3package_from_pypi.py -s xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx -g contosogroup -a contosoaccount -m pytz
+        import_python3package_from_pypi.py -s xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx -g contosogroup -a contosoaccount -m pytz -v 1.0.0
 Changelog:
     2020-12-29 AutomationTeam:
     -Import Python 3 package with dependencies
